@@ -1,0 +1,233 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    width: 100%;
+    height: 6rem;
+}
+
+.header .nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header .nav .bar {
+    width: 25rem;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.3rem;
+}
+
+.header .nav .bar .back:hover {
+    background-color: #dcddde;
+    border-radius: 50%;
+}
+
+.header .nav .bar .bar__link{
+    margin-right: 1.5rem;
+    font-size: 1.25rem;
+    color: black;
+}
+
+.header .nav .bar .bar__menu{
+    background-image: url(../img/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 1rem;
+}
+
+.header .nav .bar .bar__link .bar__photo{
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.main {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main .main-logo {
+    width: 53rem;
+    margin: 0 auto;
+    margin-bottom: 2.7rem;
+}
+
+.main .main-logo .logo {
+    width: 84%;
+}
+
+.main .main-input {
+    width: 58.2rem;
+    margin: 0 auto;
+    margin-bottom: 2.7rem;
+}
+.main .main-input .main-input-container {
+    width: 58.2rem;
+    border-radius: 10rem;
+    border: .1rem solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .main-input .main-input-container:hover {
+    box-shadow: 0 .1rem .6rem 0 #20212447;
+    border-color: #dfe1e5;
+}
+
+.main .main-input .main-input-container .search-input {
+    width: 50rem;
+    height: 4.5rem;
+    border: none;
+    outline: none;
+}
+
+.main .main-input .main-input-container .search-icon {
+    background-image: url('https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_search_48px-512.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    opacity: 0.4;
+}
+
+.main .main-input .main-input-container .micro-icon {
+    background-image: url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.main .main-buttons {
+    width: 58.2rem;
+    margin: 0 auto;
+    margin-bottom: 2.4rem;
+}
+
+.main .main-buttons .main-button-container {
+    display: inline-block;
+}
+
+.main .main-buttons .main-button-container .button {
+    height: 3.6rem;
+    background-color: #f8f9fa;
+    border: 0;
+    font-size: 1.4rem;
+    color: #404447;
+    border-radius: .5rem;
+    padding: 0 1.5rem;
+    margin-right: 1rem;
+}
+
+.main .main-buttons .main-button-container .button:hover {
+    border: .1rem solid #c6c6c6;
+    box-shadow: 0 .1rem .1rem rgba(0,0,0,0.1);
+    color: #222;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+.main .main-languages {
+    width: 58.2rem;
+    margin: 0 auto;
+}
+
+.main .main-languages .main-languages-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .main-languages .main-languages-container .languages-text {
+    font-size: 1.3rem;
+    padding-right: 1rem;
+}
+
+.main .main-languages .main-languages-container p {
+    color: #444;
+}
+
+.main .main-languages .main-languages-container a {
+    color: #362bb5;
+}
+
+.country {
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    bottom: 5rem;
+    font-size: 1.4rem;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+}
+
+.country p {
+    margin: 2rem;
+    color: #5f6368;
+}
+
+.footer {
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 1.4rem;
+    background-color: #f2f2f2;
+    border-top: .1rem solid #e4e4e4;
+}
+
+.footer ul {
+    margin: 1rem;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+.footer .footer-left {
+    justify-self: left;
+}
+
+.footer .footer-right {
+    justify-self: right;
+}
+
+.footer ul li a {
+    margin: 1rem;
+    color: #5f6368;
+}
